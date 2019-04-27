@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FlightController!{% endblock %}
+
+{% block body %}
+    <style>
+    </style>
+
+    <div id="FlightsData">
+
+
+    </div>
+    <div>
+        <div class="row">
+            <form id="FlightForm">
+            <div class="col-sm-2"><div class="form-group"><label>Origin City</label><input id="originCityLast" required class="form-control" type="text" /></div></div>
+            <div class="col-sm-2"><div class="form-group"><label>Destination City</label><input id="destinationCityLast" required class="form-control" type="text" /></div></div>
+            <div class="col-sm-2"><div class="form-group"><label>Start Time</label><input id="startTimeLast" required class="form-control" type="text"/></div></div>
+            <div class="col-sm-2"><div class="form-group"><label>End Time</label><input id="endTimeLast" required class="form-control" type="text" /></div></div>
+            <div class="col-sm-1"><div class="form-group"><label>Price</label><input id="priceLast" required class="form-control" type="text"/></div></div>
+            <div class="col-sm-2"><div class="form-group"><label>Airline</label><input id="airlineLast" required class="form-control" type="text" /></div></div>
+            <div class="col-sm-1"><div class="form-group"><label style="color:white;"> s</label><br><input type="submit" value="+" /></div></div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    <script src="/js/flight.js"></script>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PackageController!{% endblock %}
+
+{% block body %}
+    <style>
+    </style>
+
+    <div id="packageData">
+    </div>
+    <div>
+        <div class="row" id="lastRow">
+            <form id="FlightForm">
+                <div class="col-sm-3"><div class="form-group"><label>Package Name</label><input id="originCityLast" required class="form-control" type="text" /></div></div>
+                <div class="col-sm-4"><div class="form-group"><label>Package Description</label><input id="destinationCityLast" required class="form-control" type="text" /></div></div>
+                <div class="col-sm-3"><div class="form-group"><label>Package Flights</label><input id="startTimeLast" required class="form-control" type="text"/></div></div>
+                <div class="col-sm-2"><div class="form-group"><label style="color:white;">P</label><br><input type="submit" value="+" /></div></div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+{% block javascripts %}
+    <script src="/js/package.js"></script>
+{% endblock %}
